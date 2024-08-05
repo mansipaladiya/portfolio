@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="jquery.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <nav>
+            <img src="assets/image/logo2.png" height="20%" width="20%" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a> </li>
+                <li><a href="#about">about</a> </li>
+                <li><a href="#education">Education</a> </li>
+                <li><a href="#skills">Skills</a> </li>
+                <li><a href="#portfolio">portfolio</a> </li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa fa-bars" onclick="openmenu()"></i>
+            
+
+        </nav>
+        <div class="row">
+            <div class="header-col-1">
+                <p> web devloper</p>
+                <h1>Hi, I'm <span>Mansi</span> <br> From Surat</h1>
+                
+                
+            </div>
+            <div class="header-col-2">
+                <img src="assets/image/pic1.png" class="img2">
+                
+            </div>
+        </div>
+    </div>
+    <!-- -------------About-------------- -->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="img1" src="assets/image/pic1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="title">About me</h1>
+                    <p> Mansi's portfolio combines his passion for web development with his creative design skills.  Each project is presented with attention to detail, including screenshots, interactive demos, and descriptions of the design and development process. Mansi's portfolio demonstrates his ability to create visually appealing and user-friendly websites that stand out from the competition.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links">Skills</p>
+
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- -------------education-------------- -->
+      <div id="education">
+        <div class="container">
+            <h1 class="title">My Education</h1>
+            <div class="education-list">
+                <div>
+                    <h2>Year : 2020</h2>
+                    <p><b>class </b>: XI <br> P.P savani school,surat,gujrat.
+                    </p>
+                </div>
+                <div>
+                    <h2>Year : 2022</h2>
+                    <p><b>Class</b> : XII<br> <b>Field </b>: Commerce <br> Mauni International school,surat,gujrat.
+                    </p>
+                </div>
+                <div>
+                    <h2>Year : 2022-2025</h2>
+                    <p><b>Degree </b>: BCA<br><b>Field </b>: Information Technology <br>SDJ International College,VNSGU vesu,surat,gujrat.
+                    </p>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+      </div>
+      <!-- -----------------skills----------------- -->
+      <div id="skills">
+        <div class="container">
+            <h1 class="title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>I am Web designer,My goal is to provide a rich website design using my skills like HTML , CSS , Javascript , Bootstrap </p>
+
+                </div>
+                <div>
+                    <h2>UI/UX Design</h2>
+                    <p>I am an UI/UX based in Surat passionate about creating result oriented user experience.
+                    </p>
+                </div>
+                <div>
+                    <h2>Web Developer</h2>
+                    <p> I am a Web Developer,I do back-end using my skills like JAVA , PHP , Node Js , Mongodb etc.</p>
+                    
+                </div>
+
+
+            </div>
+        </div>
+           
+    </div>
+
+
+
+      <!-- -------------------portfolio----------- -->
+       <div id="portfolio">
+        <div class="container">
+            <div class="title">My Work</div>
+            <div class="work">
+                <a href="website/home.html"><img class="website" src="assets/image/website.jpg" alt=""></a>
+                
+            </div>
+        </div>
+       </div>
+
+
+      <!-- --------------contact----------- -->
+       <div id="contact">
+         <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="title">Contact me</h1>
+                    <p><i class="fa fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa fa-phone-square"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa fa-twitter-square"></i></a>
+                        <a href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa  fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="your name" required>
+                        <input type="email" name="email" placeholder="your email" required>
+                        <textarea name="message" rows="6" placeholder="yourmessage"></textarea>
+                        <button  class="btn" type="submit"> submit </button>
+                    </form>
+                </div>
+            </div>
+         </div>
+       </div>
+       <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+       </script>
+
+    
+</body>
+</html>
